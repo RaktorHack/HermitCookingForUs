@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+
+  <html lang="en">
+
+    <head>
+
+     <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+ <script>
+     new WOW().init();
+ </script>
+
+    <title>Weekly Meal Prep Service</title> 
+
+    <!-- Bootstrap -->
+
+    <style type="text/css">
+      
+      /*!
+ * Bootstrap v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+body {
+  background:url(https://jimdo-storage.freetls.fastly.net/image/278233164/4746788d-a3f2-4c21-a1e8-84c1af9cfaab.jpg?format=pjpg&quality=80&auto=webp&disable=upscale&width=1440&height=788);
+  background-size: contain;
+  margin: 0;
+  font-family: Century Gothic, sans-serif;   
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+@media all and (max-width: 420px)
+{
+body{
+  background-size: cover;
+  background-position: left;
+  }
+}
+a
+{
+  text-decoration: none;
+}
+#logo
+{
+  width: 14%; 
+  left:3%; 
+  display: inline-flex; 
+  position: fixed; 
+  margin-top:1.4%; 
+  z-index: 1234789; 
+}
+@media all and (max-width: 420px)
+{
+#logo{
+  width:26%;
+  left:37%;
+  margin-top:4.4%; 
+  }
+}
+#buho
+{
+  width: 12%; 
+  margin-left:85%; 
+  margin-top:2%; 
+  display: inline-flex; 
+  position: fixed; 
+  z-index: 1234789;"        
+}
+@media all and (max-width: 420px)
+{
+#buho{
+    width: 22%;
+    margin-left: 0%;
+    margin-top: 6%;
+  }
+}
+/*------------------------AQUI-ESTA-LA-BARRA-DE-NAVEGACION------------*/
+#nav-bar
+{
+    align-items: stretch;
+    vertical-align: middle !important;
+    backdrop-filter: blur(10px);
+    background: rgba(10,10,10,0.3);
+    border-radius: 10px;
+    display: flex !important;
+    list-style: none;
+    z-index: 98764;
+    margin-top: 2.9%;
+    padding: 1%;
+    width: 56%;
+    margin-left: 22vw;
+    height: 9%;
+    position: fixed;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center !important;
+}
+@media all and (max-width: 420px)
+{
+#nav-bar{
+  visibility: hidden;
+  }
+}
+.nav-link
+{
+  list-style: none;
+  font-weight: bold;
+  font-size:20px;
+  color: #dede;       
+  padding:2%;
+}
+.nav-link:hover
+{
+ color:#ffcc00;
+}
+
+#pagina-actual
+{
+  list-style: none;
+  font-weight: bold;
+  font-size:20px;
+  color: white;       
+  padding:2%;
+}
+#pagina-actual:hover
+{
+ color:#ffcc00;
+}
+/*_______BOTON_______*/
+.book-now{
+  color: white;
+  background: linear-gradient(135deg,yellow,orange,#ff6a00,#ff6a00);
+  border-radius: 7px;
+  border:none;
+  margin: 0 auto;
+  margin-top:-1%;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+
+}
+.book-now:hover {
+  background: linear-gradient(-135deg,yellow,orange,#ff6a00,#ff6a00);
+  cursor: pointer;
+}
+.book-now:focus
+{
+  background: linear-gradient(-135deg,yellow,orange,#ff6a00,#ff6a00);
+  border:none;
+  opacity: 0.8;
+}
+
+/*_______TEXTO______*/
+.form
+{
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);  
+  flex-wrap: nowrap; 
+  width: 54%; 
+  height:80%;
+  margin-left:22vw; 
+  justify-content: center; 
+  
+  border-radius: 7px; 
+  padding: 2%; 
+}
+@media all and (max-width: 420px)
+{
+.form{
+  padding: 4%; 
+  width:88%;
+  margin: 0 auto;
+  justify-content: center;
+  }
+}
+/*-----------------------------------------------------------------*/
+#finish-on
+{
+  color: white; 
+  font-size: 18px;
+  margin-right:9%;
+}
+@media all and (max-width: 420px)
+{
+#finish-on{
+  margin-left: 0;
+  }
+}
+.adultos
+{
+  color: white; 
+  font-size: 18px; 
+  margin-right: 9.8vw;
+}
+@media all and (max-width: 420px)
+{
+.adultos{
+  margin-left: 0;
+  margin-right: 47.4%;
+  }
+}
+.children
+{
+  color: white; 
+  font-size: 18px; 
+  margin-right: 0.3vw;
+}
+@media all and (max-width: 420px)
+{
+.children{
+  color: white;
+  font-size: 18px;
+  margin-right: 14.49%;
+  }
+}
+
+.precios
+{
+  color: white; 
+  font-size: 18px; 
+  font-weight:bold; 
+  margin-left:0%;
+}
+@media all and (max-width: 420px)
+{
+.precios{
+  margin-left: 0;
+  }
+}
+.date
+{
+  width: 25%;
+  padding: 4px;
+  border-radius: 7px;
+  border-color: transparent;
+  background-color: rgba(255,255,255,0.4);
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Century Gothic;
+}
+@media all and (max-width: 420px)
+{
+.date{
+  width: 42%;
+  float: right;
+  }
+}
+.tel
+{
+  width: 20%;
+  padding: 4px;
+  border-radius: 7px;
+  border-color: transparent;
+  background-color: rgba(255,255,255,0.4);
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Century Gothic;
+}
+@media all and (max-width: 420px)
+{
+.tel{
+  width: 50%;
+  }
+}
+.subtotal
+{
+ color: white; 
+ font-size: 18px;
+ margin-right: 0; 
+ margin-left: 5.49%; 
+}
+@media all and (max-width: 420px)
+{
+.subtotal{
+  margin-left: 0;
+  margin-right: 43.49%;
+  }
+}
+.resultado
+{
+  background-color: rgba(255,255,255,0.4);
+  color: white;
+  float: right;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Century Gothic;
+  width: 20%;
+  padding: 4px;
+  border-radius: 7px;
+  border-color: transparent;
+}
+@media all and (max-width: 420px)
+{
+.resultado{
+  width: 22%;
+  float: right; 
+  }
+}
+.mail
+{
+  background-color: rgba(255,255,255,0.4); 
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Century Gothic;
+  width: 53.49%;
+  padding: 4px;
+  border-radius: 7px;
+  border-color: transparent;
+}
+@media all and (max-width: 420px)
+{
+.mail{
+  width: 50%; 
+  }
+}
+.full-name
+{
+  width: 34%;
+  margin: 1%;
+  padding: 4px;
+  border-radius: 7px;
+  border-color: transparent;
+  background-color: rgba(255,255,255,0.4);
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Century Gothic;
+}
+@media all and (max-width: 420px)
+{
+.full-name{
+  width: 50%;
+  float: right; 
+  }
+}
+input
+{
+  width: 10%;
+  margin: 1%;
+  padding: 4px;
+  border-radius: 7px;
+  border-color: transparent;
+  background-color: rgba(255,255,255,0.4);
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Century Gothic;
+}
+@media all and (max-width: 420px)
+{
+input{
+  width: 20%;
+  float: right; 
+  }
+}
+input:focus
+{
+ border: orange 2px solid;
+ outline: none; 
+ color: white;
+ font-weight: bold;
+ font-family: Century Gothic;
+}
+select
+{ 
+  border-radius: 7px;
+  border: transparent 2px solid;
+  background-color: rgba(255,255,255,0.4);
+  font-size: 14px;
+  padding: 7px;
+  margin:1%;
+  color: white;
+  font-family: Century Gothic;
+  font-weight: bold;
+}
+select:focus
+{
+  border: orange 2px solid;
+  outline: none; 
+}
+option
+{
+  font-weight: bolder;
+  font-family: Century Gothic;
+  color: black;
+}
+#parrafo
+{
+  width:77%; 
+  justify-content: center; 
+  display: flex; 
+  margin: 0 auto; 
+  font-size: 19px; 
+  font-weight: bold; 
+  color: #461C00; 
+  animation-delay: 0.4s; 
+  animation-duration: 1s;
+}
+@media all and (max-width: 420px)
+{
+#parrafo{
+  width: 90%; 
+  }
+}
+.finish
+    {
+     display: flex;
+     height: auto;
+     width: 100%;
+     align-items:bottom;
+     padding-bottom: 0px;
+     margin-top: -1%;
+     margin-bottom: -1%;
+     margin-left: 0%;
+     margin-right: 0%;
+     box-sizing: border-box;
+     background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ) ,url(https://jimdo-storage.freetls.fastly.net/image/269202108/c9f328e5-08f7-4086-a16b-2b06f7982372.jpg?format=pjpg&quality=80&auto=webp&disable=upscale&width=1440&height=810);
+}
+.container-infofooter
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  width:100%;
+  box-sizing: border-box;
+  margin-top: 2%;
+  font-size: 19px;
+}
+@media (max-width: 420px)
+{.container-infofooter {
+    display: inline;
+                }
+}
+.infofooter
+{    
+  display: block;
+  color: lightgray;
+  line-height: 8px;
+  text-align:left;
+  margin-left:7vw;
+  width:14%;
+  box-sizing: border-box;
+}
+@media (max-width: 420px)
+{.infofooter {
+    text-align: left;
+    margin-left: 7%;
+    width: 90%;
+}
+}
+.infofooter-redes-sociales
+{
+  display: block;
+  color:lightgray;
+  line-height: 8px;
+  text-align: left;
+  width: 17%;
+  box-sizing: border-box; 
+} 
+@media (max-width: 420px)
+{.infofooter-redes-sociales {
+    text-align: left;
+    width: 40%;
+    margin-left: 7%;
+}
+}
+h2
+{
+  display:inline-block;
+  vertical-align: top;
+  color:white;
+  font-size: 22px;
+  text-align:left;
+  margin-left:0%;
+}  
+h3
+{
+  text-align: left;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+}
+.pfooter
+{
+ font-size: 18px;
+ font-weight:normal; 
+ color:white;
+ text-decoration: none;
+}
+.pfooter:hover
+{
+color: orange;
+}
+.copyright
+{
+  text-align: center;
+  justify-content: center;
+  font-size:18px;
+  color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  box-sizing: border-box;
+}
+@media (max-width: 420px)
+{.copyright {
+    text-align: left;
+    justify-content: left;
+    width: 85%;
+    margin-left: 4%;
+}
+ }
+.studios
+{
+  text-align: center;
+  justify-content: center;
+  font-size:18px;
+  font-weight: bolder;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1%;
+  width:10%;
+  box-sizing: border-box;
+}
+.studios:hover
+{
+  font-size: 19px;
+  color: orange;
+}
+@media (max-width: 420px)
+{.studios {
+    display: inline-table;
+    text-align: left;
+    justify-content: left;
+    margin-left: 3%;
+    width: 10%;
+    margin-bottom: 7%;
+}
+ }
+/*ICONOS FOOTER*/
+.INSTAGRAMicon
+{
+  float: right;
+  margin-top:52px;
+  margin-right: 3vw;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+}
+.FBicon
+{
+  float: right;
+  margin-top:-8px;
+  margin-right: 3vw;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+} 
+.salto-linea
+{
+  display: none;
+}  
+@media all and (max-width: 420px)
+{
+.salto-linea{
+  display:block;
+  }
+}
+/*----------------------*/ 
+
+    </style>
+
+ <link rel="icon" href="https://jimdo-storage.freetls.fastly.net/image/270499176/09c57ad9-d3bb-4e53-b575-9c8c7ba107db.png?quality=80&auto=webp&disable=upscale&width=512&height=512">
+
+  </head>
+
+  <body>
+
+    <div id="logo">
+      
+      <a href="http://hermitcookingforus.com/"><img src="https://jimdo-storage.freetls.fastly.net/image/270497082/7aaaafc5-8c27-41ed-af99-f29178effe0b.png?quality=80&auto=webp&disable=upscale&width=200&height=167" width="100%" ></a>
+    </div>
+
+    <div id="buho">
+      <a href="#"><img src="https://jimdo-storage.freetls.fastly.net/image/270888038/77e86244-91ba-4403-83d9-38e55bb31d6d.gif?quality=80&auto=webp&disable=upscale&width=500&height=500" width="100%"></a>
+    </div>
+    
+    <nav>
+
+       <div id="nav-bar">
+
+
+                <a class="nav-link" href="http://hermitcookingforus.com/">Home</a>
+
+
+                <a id="pagina-actual" href="#http://hermitcookingforus.com/pricing.html">Pricing</a>
+
+
+                <a class="nav-link" href="#">Chef's Kitchen</a>
+
+
+                <a class="nav-link" href="http://hermitcookingforus.com/about.html">About us</a>
+
+
+                <a class="nav-link" href="#">
+              
+                      <img src="https://jimdo-storage.freetls.fastly.net/image/270497157/a462772a-c6a2-4600-8f5b-1c5126bc44ac.png?quality=80&auto=webp&disable=upscale&width=128&height=128" width="40vh">
+             
+                </a>
+
+                <a class="nav-link" href="#">
+           
+                      <img src="https://jimdo-storage.freetls.fastly.net/image/270497215/82f5478d-3c67-4096-bcf7-fe13952bb8dc.png?quality=80&auto=webp&disable=upscale&width=580&height=580" width="42vh">
+
+                </a>
+
+
+       </div>
+
+    </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+          
+  <form class="form" name="Reservación" netlify>
+
+        <h3 style="margin-top:-1%;">Tell us how long are you going to stay with us</h3>
+        <br>
+          <label style="color: white; font-size: 18px;">Service starts on</label>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+          <input type="date" id="date" name="Inicia" class="date">
+
+            <script>$('#date').val(new Date().toJSON().slice(0,10));</script>
+        
+        <br class="salto-linea">
+        <br class="salto-linea">
+
+            <label id="finish-on">Finish on</label>
+
+        <input type="date" id="start" name="Termina"
+                value="2022-03-01"
+                 min="2022-03-01" max="2023-12-31" class="date">
+
+        <br>
+       <h3>How many people will live the Hermit Experience?</h3>
+        <br>
+<!-------------------------------------------------------------------------------------------------------------->
+<!----------------------SUBTOTAL DE CHILDRENS---------------------------------(°_°)----------------------------->
+<!-------------------------------------------------------------------------- _/|__|-------------------------------->
+             <label class="adultos">Adults</label>
+
+                 <input type="number" name="Adultos" min="0" max="10" required>
+
+        <br class="salto-linea">
+      
+
+             <label for="username" class="precios">
+               $190 Usd/Week</label >
+        
+        <br class="salto-linea">
+
+             <label class="subtotal">Subtotal</label>
+             <label class="resultado">$</label>
+        <br class="salto-linea">
+        <br>
+        <br class="salto-linea">
+<!--------------------------------------------------------------------------------------------------------------->
+<!------------------------SUBTOTAL DE RUCOS---------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------->
+             <label class="children">Childrens (age 1-12)</label >
+               <input type="number" name="Niños" >
+
+        <br class="salto-linea">
+
+             <label class="precios">
+             $100 Usd/Week</label >
+          
+              <label class="subtotal">Subtotal</label>
+              <label class="resultado">$</label>
+   <!------------------------------------------------------------------------------------------------------------>
+        <br class="salto-linea">
+        <br class="salto-linea">
+    <h3 style="margin-top:0%;">Lets meet us better</h3>
+           <br>
+        
+          <label style="color: white; font-size: 18px;">Name</label >
+            <input type="name" id="name" name="Nombre" class="full-name" required>
+        
+        <br class="salto-linea">
+        <br class="salto-linea">
+
+          <label style="color: white; font-size: 18px;">Last name</label>
+            <input type="text" id="lastname" name="Apellido" class="full-name" required>
+
+        <br class="salto-linea">
+        <br>
+
+          <label style="color: white; font-size: 18px;">Phone </label>
+            <input type="tel" id="tel" name="tel" placeholder="123-4567-8901" minlength="10" maxlength="13" 
+            class="tel" required>
+        
+        <br class="salto-linea">
+        <br class="salto-linea">
+   <!-----------------------------------------EMAIL------------------------------------------------------------------->
+     <label style="color: white; font-size: 18px;margin-left:0%;">E-mail</label>
+
+         <input type="text" id="mail" name="Email" placeholder="name@mail.com" class="mail" required>
+
+       <br>
+       <br>
+          <input class="book-now" href="#" role="button" type="submit" value="Book Now">
+       <br class="salto-linea">
+       <br class="salto-linea">
+        
+       </form>
+
+        <div style="width: 100%; background:rgb(244,244,244); margin-top: 0.6%;">
+          <br>
+           <p class="wow fadeInDown" style="
+        color: transparent;
+        background: linear-gradient(180deg,#FF7700,orange,#ffcc00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 90%;
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+        font-size: 70px;
+        font-family: Century Gothic;
+        font-weight: bolder;
+        letter-spacing: -2.8px;
+        animation-delay: 0.4s;
+        animation-duration:2s;"> 
+      Keep in mind
+     </p>
+          <br>
+          <p id="parrafo" class="wow fadeInDown">By booking at Hermit Cookin For Us® is important to provide us some personal data in order to schedule your reservation. 
+          <br>
+          <br>
+          The data will be stored and protected according to our privacy protocols. Please verify all your data is correct before confirm the reservation. A salesman will stay in touch with you after confirm your reservation in order to assist you for any further claim or support.
+            </p>
+          <br>
+          <br>
+          <br>
+          <br>
+       </div>
+
+     <footer class="finish">
+      <div class="container-infofooter">
+        <div class="infofooter">
+        <h2>Contact Hermit</h2>
+        <p class="pfooter"><a href="https://astronbox.com/app" class="pfooter">(+52) 987 138 61 66</a></p>
+        <p class="pfooter"><a href="https://astronbox.com/blog" class="pfooter">hermitcookingforus@gmail.com</a></p>   
+      </div>
+      <div class="infofooter-redes-sociales">
+        <h2>Follow Us</h2>
+        <! –– imagen instagram ––>
+            <a href="#" class="pfooter"><img src="https://jimdo-storage.freetls.fastly.net/image/270497254/0e9b5852-5da4-461f-96b5-1d27f3d8d1dd.png?quality=80&auto=webp&disable=upscale&width=128&height=128" width="24vw" class="INSTAGRAMicon"></a>
+        </a>
+        <! –– imagen icono facebook ––>
+          <p class="pfooter"><a href="#" class="pfooter">Instagram</a></p>
+            <a href="#" class="pfooter"><img src="https://jimdo-storage.freetls.fastly.net/image/270497296/1eeac43c-bbb2-4672-b74b-e6fca9f49549.png?quality=80&auto=webp&disable=upscale&width=512&height=512"  width="24vw"class="FBicon"></a>
+        </a>
+          <p class="pfooter"><a href="#" class="pfooter">Facebook</a></p>
+      </div>
+
+            <div class="copyright">
+            <p class="copyright"> 2022 © Hermit Cooking For Us | This website was made by</p>
+            <a href="#" class="studios">K & D Studios</a></p>
+            </div>
+            </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+
+
+ 
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="../../Downloads/js/popper.min.js"></script>
+
+    <script src="../../Downloads/js/bootstrap-4.4.1.js"></script>
+
+  </body>
+
+</html>
