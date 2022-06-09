@@ -1,4 +1,4 @@
-const copyButtonLabel = "Copy Code";
+const copyButtonLabel = "Copiar Código";
 
 // you can use a class selector instead if you, or the syntax highlighting library adds one to the 'pre'. 
 let blocks = document.querySelectorAll("pre");
@@ -20,7 +20,7 @@ async function copyCode(event) {
   let text = code.innerText;
   await navigator.clipboard.writeText(text);
   
-  button.innerText = "Code Copied";
+  button.innerText = "Código Copiado";
   
   setTimeout(()=> {
     button.innerText = copyButtonLabel;
